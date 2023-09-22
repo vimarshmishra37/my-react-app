@@ -4,7 +4,7 @@ import './App.css'; // Import CSS file for styling
 const App = () => {
   const validCredentials = {
     loginId: 'vimarshmishra',
-    password: 'v!m@13168535',
+    password: 'omar',
   };
 
   // State to store form input values
