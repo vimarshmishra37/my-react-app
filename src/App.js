@@ -53,14 +53,14 @@ const App = () => {
       </div>
 
       <div className='cont'>
-      <div className='header'>
+      <div className='headerA'>
       <img
-    className="logo"
+    className="logoA"
     src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
     alt="AICTE Logo"
   />
-  <div className='portal'>
-    <label className='AICTE'><b> AICTE</b></label>
+  <div className='portalA'>
+    <label className='AICTEA'><b> AICTE</b></label>
     <br></br>
     <label>a unified portal for all your needs</label>
   </div>

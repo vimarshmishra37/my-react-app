@@ -19,7 +19,14 @@ const Check = () => {
 
   return (
     <div className="check">
-    <div className='header'>
+    
+    
+   
+      {/* <div className="check"> Background image */}
+     
+      <div>
+        
+      <div className='header'>
       <img
     className="logo"
     src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
@@ -31,12 +38,6 @@ const Check = () => {
     <label>a unified portal for all your needs</label>
   </div>
   </div>
-    
-   
-      {/* <div className="check"> Background image */}
-     
-      <div>
-        
         <div className="background-image"> </div>
       </div>
 

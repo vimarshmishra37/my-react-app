@@ -36,25 +36,26 @@ width: 25%;
 position: relative;
 
 }
-.header
+.headerA
   {
     display: flex;
     z-index: 1;
     position: relative;
-    top:15px;
-    right: 140%;
+    
+    top:0.5%;
+    right: 135%;
   }
-  .portal{
+  .portalA{
     position: relative;
     top: 25px;
     left: 10%;
     color: rgb(0, 0, 112);
   }
-  .AICTE{
+  .AICTEA{
     font-size:200%;
     
   }
-  .logo {
+  .logoA {
     z-index: 1;
     position:relative;
     top: 1em;
@@ -69,7 +70,7 @@ position: relative;
 /* Login form container */
 .login-container {
   position: relative;
-  top: 10%;
+  top: 15%;
   opacity: 0.8;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);
@@ -120,7 +121,7 @@ input {
 color: red;
 }
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .login-container {
     width: 80%;
   }
@@ -132,8 +133,8 @@ color: red;
       display: flex;
     z-index: 1;
     position: relative;
-    top:15px;
-    right:40%;
+    top: -10%;
+        right:40%;
     }
 }
 .go-back-button{
