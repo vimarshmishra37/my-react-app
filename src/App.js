@@ -45,7 +45,7 @@ const App = () => {
         password: '', // Clear the password input
       });
       setAuthenticated(false);
-      setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
+      setErrorMessage('Credentials do not match.'); // Set the error message
     }
   };
 
@@ -60,25 +60,32 @@ const App = () => {
   }
 
   return (
-    <div className="app">
+    //1
+     <div className="app">
       {/* Background image */}
+      //2
       <div>
         <div className="background-image"> </div>
       </div>
 
       <div className='cont'>
+        
         <div className='headerA'>
           <img
             className="logoA"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
             alt="AICTE Logo"
           />
+          
           <div className='portalA'>
             <label className='AICTEA'><b> AICTE</b></label>
             <br></br>
             <label className='x'>a unified portal for all your needs</label>
+        
           </div>
+          
         </div>
+        
         <div className="login-container">
           <div className="login-form">
             {authenticated ? (

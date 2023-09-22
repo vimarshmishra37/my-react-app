@@ -93,7 +93,7 @@ position: relative;
 /* Login form container */
 .login-container {
   position: relative;
-  top: 7%;
+  top: 1%;
   opacity: 0.8;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);

@@ -45,7 +45,7 @@ const Appb = () => {
         password: '', // Clear the password input
       });
       setAuthenticated(false);
-      setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
+      setErrorMessage('Credentials do not match.'); // Set the error message
     }
   };
 
