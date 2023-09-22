@@ -97,7 +97,7 @@ const App = () => {
                   />
                 </div>
                 <div className="input-container">
-                  <label htmlFor="password">Password:</label>
+                  <label htmlFor="password">Password:<a href=''> Forgot password?</a> </label>
                   <input
                     type="password"
                     id="password"
@@ -110,19 +110,24 @@ const App = () => {
                     <p className="error-message" >{errorMessage}</p>
                   )}
                 </div>
+                <button className="signup-button" onClick={handleSignupClick}>
+                  NEW USER? SIGNUP
+                </button>
+                <br></br>
+                <br></br>
+               
                 <button className="login-button" onClick={handleLogin}>
                   Login
                 </button>
-                <button className="signup-button" onClick={handleSignupClick}>
-                  Signup
-                </button>
+                <button className="go-back-button" onClick={() => window.location.href = 'index.html'}>
+              Go Back
+            </button>
+                
               </div>
             )}
 
             {/* "Go Back" button */}
-            <button className="go-back-button" onClick={() => window.location.href = 'index.html'}>
-              Go Back
-            </button>
+           
           </div>
         </div>
       </div>

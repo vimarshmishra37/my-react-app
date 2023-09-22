@@ -20,7 +20,7 @@ right: 100px;
 top: 10px;
   background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
   padding: 20px;
-  width: 300px;
+  width: 600px;
   border-radius: 10px; /* Set the width of the container */
   max-width: 100%; /* Ensure it doesn't exceed the viewport width */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the container */
@@ -42,21 +42,30 @@ label {
   display: flex;
 
 }
+.upper{
+  display: flex;
+}
 .signup_log{
   display: flex;
 position: relative;
 bottom: 250px;
-right: 300px;
+right: 170px;
 }
+
 #username_signup,#password_signup,#email {
   align-items: center;
-  width: 80%;
+  width: 100%;
   padding: 10px;
   padding-right: 10%;
   padding-left: 10%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  
+}
+#pac{
+  position: relative;
+  left:25% ;
 }
 .cen{
   justify-content: center;
