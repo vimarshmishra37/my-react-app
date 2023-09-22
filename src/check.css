@@ -32,6 +32,7 @@
     z-index: 0;
     width: 100%;
     height: 100%;
+    
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ344JnEXwSLjD_naq4dp_8fGSLvl9Zmey11Q&usqp=CAU'); /* Add your background image URL */
     background-size: cover;
     filter: blur(5px); /* Apply blur effect */
@@ -51,6 +52,8 @@
     justify-content: center;
  }
   .button {
+    image-rendering: pixelated;
+   
     background-image: url('https://img.freepik.com/free-vector/indian-tricolor-theme-watercolor-texture-patriotic-background-vector_1055-11952.jpg');
     font-size: larger;
     position: relative;
@@ -65,14 +68,16 @@
   }
   .orange{
 color: rgb(255, 153, 0);
-
+background-position: 5% 5%; 
   }
   .white{
 background-color: white;
 color: blue;
+background-position: 50% 25%; 
   }
   .green{
 color: green;
+background-position: 100% 100%; 
   }
   .orange:hover{
     background-color: rgb(201, 131, 2);
