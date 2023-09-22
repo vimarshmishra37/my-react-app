@@ -108,5 +108,10 @@ color: red;
 .go-back-button{
   position: relative;
   top:10px;
+  border-style: none;
+  height: 35px;
+  width: 74px;
+  color: white;
+  background-color: #007bff;
   border-radius: 5px;
 }

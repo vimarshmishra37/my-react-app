@@ -20,14 +20,9 @@ const Check = () => {
   return (
     <div className="check">
       {/* Background image */}
-      <div>
-        <img
-          className="logo"
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
-          alt="AICTE Logo"
-        />
+      
         <div className="background-image"> </div>
-      </div>
+      
 
       <div className="buttons">
         <div className="button-box">
