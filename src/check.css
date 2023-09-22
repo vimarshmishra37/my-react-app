@@ -26,6 +26,9 @@
   }
   
   .button-box:hover {
+   
+      border: rebeccapurple;
+    
     transform: scale(1.05); /* Enlarge on hover */
   }
   
@@ -89,9 +92,7 @@
     transition: background-color 0.2s ease-in-out;
     
   }
-  .button:hover{
-    border: rebeccapurple;
-  }
+  
   .orange{
 color: rgb(255, 153, 0);
 background-position: 5% 5%; 
