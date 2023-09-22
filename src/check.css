@@ -33,16 +33,33 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ344JnEXwSLjD_naq4dp_8fGSLvl9Zmey11Q&usqp=CAU'); /* Add your background image URL */
+    background-image: url('https://img.freepik.com/free-vector/indian-tricolor-theme-watercolor-texture-patriotic-background-vector_1055-11952.jpg'); /* Add your background image URL */
     background-size: cover;
     filter: blur(5px); /* Apply blur effect */
   }
-  
+  .header
+  {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    top:45px;
+    right: 35%;
+  }
+  .portal{
+    position: relative;
+    top: 25px;
+    left: 10%;
+    color: rgb(0, 0, 112);
+  }
+  .AICTE{
+    font-size:200%;
+    
+  }
   .logo {
     z-index: 1;
     position:relative;
-    top: 3px;
-    left: 93%;
+    top: 1em;
+    right: -1em;
     width: 70px;
     height: 70px;
   }
@@ -50,6 +67,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  position:relative;
+  top: -11px;
     margin: 100px;
     height: 100%;
     width: 100%;

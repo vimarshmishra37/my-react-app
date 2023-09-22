@@ -34,9 +34,7 @@ body {
 .background-images{
 width: 25%;
 position: relative;
-top: 10px;
-left:210%;
-  filter: none;
+
 }
 .cont{
   display: flex;
@@ -109,7 +107,7 @@ color: red;
   position: relative;
   top:10px;
   border-style: none;
-  height: 35px;
+  height: 28px;
   width: 74px;
   color: white;
   background-color: #007bff;
