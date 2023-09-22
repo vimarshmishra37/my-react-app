@@ -15,9 +15,13 @@
 }
 
 .signup-container {
+position: relative;
+right: 100px;
+top: 10px;
   background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
   padding: 20px;
-  width: 500px; /* Set the width of the container */
+  width: 300px;
+  border-radius: 10px; /* Set the width of the container */
   max-width: 100%; /* Ensure it doesn't exceed the viewport width */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the container */
 }
@@ -34,18 +38,35 @@ label {
   display: block;
   margin-bottom: 5px;
 }
+.signup_logo{
+  display: flex;
 
-input[type='text'],
-input[type='email'],
-input[type='password'] {
-  width: 100%;
+}
+.signup_log{
+  display: flex;
+position: relative;
+bottom: 250px;
+right: 300px;
+}
+#username_signup,#password_signup,#email {
+  align-items: center;
+  width: 80%;
   padding: 10px;
+  padding-right: 10%;
+  padding-left: 10%;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
-
+.cen{
+  justify-content: center;
+  display: flex;
+  
+  align-items: center;
+}
 button[type='submit'] {
+position: relative;
+
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -56,3 +77,14 @@ button[type='submit'] {
 }
 
 /* Add additional styles as needed */
+.go-back-button_signup
+{
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
