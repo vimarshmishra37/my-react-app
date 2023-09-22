@@ -20,7 +20,7 @@ const Appa = () => {
 
   // State to control the rendering of the Signup component
   const [showSignup, setShowSignup] = useState(false);
-
+  const [showforgot, setShowforgot] = useState(false);
   // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -53,7 +53,12 @@ const Appa = () => {
   const handleSignupClick = () => {
     setShowSignup(true); // Show the Signup component
   };
-
+  const handleforgot = () => {
+    setShowforgot(true); // Show the Signup component
+  };
+  if (showforgot) {
+    return <Signup />;
+  }
   // Conditional rendering based on showSignup state
   if (showSignup) {
     return <Signup />;
@@ -85,7 +90,7 @@ const Appa = () => {
               <p className="welcome-message">Welcome, {validCredentials.loginId}!</p>
             ) : (
               <div>
-                <h1>Devloper <br></br> Login</h1>
+                <h1>Developer <br></br> Login</h1>
                 <div className="input-container">
                   <label htmlFor="loginId">Login ID:</label>
                   <input
@@ -97,7 +102,9 @@ const Appa = () => {
                   />
                 </div>
                 <div className="input-container">
-                  <label htmlFor="password">Password:<a href=''> Forgot password?</a> </label>
+                  <label htmlFor="password">Password: <button className="forgot" onClick={handleforgot}>
+                  forgot password
+                </button></label>
                   <input
                     type="password"
                     id="password"
