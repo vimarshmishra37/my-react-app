@@ -41,7 +41,7 @@ position: relative;
     display: flex;
     z-index: 1;
     position: relative;
-    top:25px;
+    top:15px;
     right: 140%;
   }
   .portal{
@@ -127,6 +127,13 @@ color: red;
   .background-images{
   align-items: center;
       filter: none;
+    }
+    .header{
+      display: flex;
+    z-index: 1;
+    position: relative;
+    top:15px;
+    right:40%;
     }
 }
 .go-back-button{
