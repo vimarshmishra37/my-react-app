@@ -44,6 +44,23 @@ const App = () => {
       setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
     }
   };
+  const handlesignup = () => {
+    // Check if the entered credentials match the valid credentials
+    if (
+      formData.loginId === validCredentials.loginId &&
+      formData.password === validCredentials.password
+    ) {
+      // Redirect to index.html
+      window.location.href = 'landing_page.html';
+    } else {
+      setFormData({
+        ...formData,
+        password: '', // Clear the password input
+      });
+      setAuthenticated(false);
+      setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
+    }
+  };
 
   return (
     <div className="app">
@@ -98,6 +115,9 @@ const App = () => {
                 </div>
                 <button className="login-button" onClick={handleLogin}>
                   Login
+                </button>
+                <button className="signup-button" onClick={handlesignup}>
+                  signup
                 </button>
               </div>
             )}
