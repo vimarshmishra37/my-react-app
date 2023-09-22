@@ -41,9 +41,9 @@
     z-index: 1;
     position:relative;
     top: 3px;
-    left: 95%;
-    width: 60px;
-    height: 60px;
+    left: 93%;
+    width: 70px;
+    height: 70px;
   }
  .buttons{
     display: flex;
