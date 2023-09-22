@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css'; // Import CSS file for styling
+import './App.css';
+import Signup from './Signup'; // Import the Signup component
 
 const App = () => {
   const validCredentials = {
@@ -17,6 +18,9 @@ const App = () => {
   const [authenticated, setAuthenticated] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
+  // State to control the rendering of the Signup component
+  const [showSignup, setShowSignup] = useState(false);
+
   // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -33,7 +37,7 @@ const App = () => {
       formData.loginId === validCredentials.loginId &&
       formData.password === validCredentials.password
     ) {
-      // Redirect to index.html
+      // Redirect to landing_page.html on successful login
       window.location.href = 'landing_page.html';
     } else {
       setFormData({
@@ -44,23 +48,16 @@ const App = () => {
       setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
     }
   };
-  const handlesignup = () => {
-    // Check if the entered credentials match the valid credentials
-    if (
-      formData.loginId === validCredentials.loginId &&
-      formData.password === validCredentials.password
-    ) {
-      // Redirect to index.html
-      window.location.href = 'landing_page.html';
-    } else {
-      setFormData({
-        ...formData,
-        password: '', // Clear the password input
-      });
-      setAuthenticated(false);
-      setErrorMessage('Credentials do not match. Please try again.'); // Set the error message
-    }
+
+  // Function to handle signup button click and render Signup component
+  const handleSignupClick = () => {
+    setShowSignup(true); // Show the Signup component
   };
+
+  // Conditional rendering based on showSignup state
+  if (showSignup) {
+    return <Signup />;
+  }
 
   return (
     <div className="app">
@@ -70,18 +67,18 @@ const App = () => {
       </div>
 
       <div className='cont'>
-      <div className='headerA'>
-      <img
-    className="logoA"
-    src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
-    alt="AICTE Logo"
-  />
-  <div className='portalA'>
-    <label className='AICTEA'><b> AICTE</b></label>
-    <br></br>
-    <label>a unified portal for all your needs</label>
-  </div>
-  </div>
+        <div className='headerA'>
+          <img
+            className="logoA"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
+            alt="AICTE Logo"
+          />
+          <div className='portalA'>
+            <label className='AICTEA'><b> AICTE</b></label>
+            <br></br>
+            <label className='x'>a unified portal for all your needs</label>
+          </div>
+        </div>
         <div className="login-container">
           <div className="login-form">
             {authenticated ? (
@@ -116,12 +113,12 @@ const App = () => {
                 <button className="login-button" onClick={handleLogin}>
                   Login
                 </button>
-                <button className="signup-button" onClick={handlesignup}>
-                  signup
+                <button className="signup-button" onClick={handleSignupClick}>
+                  Signup
                 </button>
               </div>
             )}
-            
+
             {/* "Go Back" button */}
             <button className="go-back-button" onClick={() => window.location.href = 'index.html'}>
               Go Back

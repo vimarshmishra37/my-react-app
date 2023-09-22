@@ -26,10 +26,8 @@
   }
   
   .button-box:hover {
-   
       border: rebeccapurple;
-    
-    transform: scale(1.05); /* Enlarge on hover */
+    transform: scale(1.15); /* Enlarge on hover */
   }
   
   .background-image {
@@ -48,6 +46,10 @@
     top:45px;
     margin-top: 10%;
     right:160% ;
+  }
+  .y{
+    position: relative;
+    top: -20px;
   }
   .portal{
     position: relative;
@@ -76,6 +78,7 @@
     margin: 100px;
     height: 100%;
     width: 100%;
+    font-size: 150%;
  }
   .button {
     image-rendering: pixelated;

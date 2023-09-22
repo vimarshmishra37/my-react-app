@@ -35,7 +35,7 @@ const Check = () => {
   <div className='portal'>
     <label className='AICTE'><b> AICTE</b></label>
     <br></br>
-    <label>a unified portal for all your needs</label>
+    <label className='y'>a unified portal for all your needs</label>
   </div>
   </div>
         <div className="background-image"> </div>

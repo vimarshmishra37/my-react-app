@@ -52,17 +52,21 @@ position: relative;
     z-index: 1;
     position: relative;
     top:1%;
-    right: 115%;
+    right: 160%;
   }
   .portalA{
     position: relative;
-    top: 25px;
+    top: 20px;
     left: 10%;
     color: rgb(0, 0, 112);
   }
   .AICTEA{
     font-size:200%;
     
+  }
+  .x{
+    position: relative;
+    top: -20px;
   }
   .logoA {
     z-index: 1;
