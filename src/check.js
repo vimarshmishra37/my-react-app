@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './check.css';
 import App from './App';
-
+import Appa from './app1';
+import Appb from './app2';
 const Check = () => {
   const [selectedTab, setSelectedTab] = useState(null);
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
-  if (selectedTab === 'educator' || selectedTab === 'developer' || selectedTab === 'administrator') {
+  if (selectedTab === 'educator' ) {
     return (
       <div>
         <App />
@@ -16,7 +17,22 @@ const Check = () => {
       </div>
     );
   }
-
+    else if(selectedTab === 'developer')
+    {
+      return(
+        <div>
+          <Appa/>
+        </div>
+      );
+    }
+  else if(selectedTab === 'administrator')
+  {
+    return(
+      <div>
+        <Appb/>
+      </div>
+    );
+  }
   return (
     <div className="check">
     

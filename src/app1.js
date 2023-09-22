@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Signup from './Signup'; // Import the Signup component
 
-const App = () => {
+const Appa = () => {
   const validCredentials = {
     loginId: 'vimarshmishra',
     password: 'omar123',
@@ -85,7 +85,7 @@ const App = () => {
               <p className="welcome-message">Welcome, {validCredentials.loginId}!</p>
             ) : (
               <div>
-                <h1>Educator <br></br> Login</h1>
+                <h1>Devloper <br></br> Login</h1>
                 <div className="input-container">
                   <label htmlFor="loginId">Login ID:</label>
                   <input
@@ -135,4 +135,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Appa;
