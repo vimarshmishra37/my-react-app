@@ -3,7 +3,7 @@ import './App.css'; // Import CSS file for styling
 
 const App = () => {
   const validCredentials = {
-    loginId: 'imarshmishra',
+    loginId: 'vimarshmishra',
     password: 'v!m@13168535',
   };
 
@@ -53,7 +53,18 @@ const App = () => {
       </div>
 
       <div className='cont'>
-        <img className="background-images" src='https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png'></img>
+      <div className='header'>
+      <img
+    className="logo"
+    src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
+    alt="AICTE Logo"
+  />
+  <div className='portal'>
+    <label className='AICTE'><b> AICTE</b></label>
+    <br></br>
+    <label>a unified portal for all your needs</label>
+  </div>
+  </div>
         <div className="login-container">
           <div className="login-form">
             {authenticated ? (
