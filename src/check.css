@@ -97,20 +97,20 @@
   }
   
   .orange{
-color: rgb(255, 153, 0);
+color:  #FF671F;
 background-position: 5% 5%; 
   }
   .white{
 background-color: white;
-color: blue;
+color: #06038D;
 background-position: 50% 25%; 
   }
   .green{
-color: green;
+color: #046A38;
 background-position: 100% 100%; 
   }
   .orange:hover{
-    background-color: rgb(201, 131, 2);
+    color: rgb(255, 166, 0);
     
       }
       .white:hover{
@@ -118,7 +118,7 @@ background-position: 100% 100%;
     color: blue;
       }
       .green:hover{
-    background-color: rgb(1, 108, 1);
+    color: rgb(4, 153, 4);
       }
  
   
