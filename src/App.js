@@ -48,7 +48,7 @@ const App = () => {
       if(  formData.loginId===''||  formData.password==='')
       setErrorMessage('Enter All Required Fields');
     else
-      setErrorMessage('Credentials do not match.'); // Set the error message
+      setErrorMessage('Credentials do not match'); // Set the error message
     }
   };
   const handleforgot = () => {
