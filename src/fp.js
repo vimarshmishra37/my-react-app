@@ -1,78 +1,79 @@
+// fp.js
 import React, { useState } from 'react';
+import './App.css'; // Make sure to import the CSS file for styling
+import './fp.css';
 
-function ForgotPassword() {
+const ForgotPassword = () => {
+  // State to store the user's email
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // State to manage error messages
+  const [errorMessage, setErrorMessage] = useState('');
 
-    // Simulate a password reset request (replace with actual API call)
-    try {
-      // Replace this with your backend API endpoint for password reset
-      const response = await fetch('/api/reset-password', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
+  // Function to handle email input changes
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
-      if (response.status === 200) {
-        setMessage('Password reset instructions sent to your email.');
-      } else {
-        setMessage('Password reset failed. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setMessage('An error occurred. Please try again later.');
-    }
+  // Function to handle form submission (request password reset)
+  const handleRequestPasswordReset = () => {
+    // Add your password reset request logic here
+    // You can send the email to your server for further processing
+
+    // For this example, we'll just show a success message
+    alert(`Password reset requested for email: ${email}`);
+
+    // Optionally, redirect the user to a success page or back to the login page
+    window.location.href = '/login'; // Redirect to the login page
   };
 
   return (
-    
-
-    <div className="forgot">
-    <div>
-        <div className='backgroundimage'></div>
+    <div className="app">
+      {/* Background image */}
+      <div>
+        <div className="backgroundimage"> </div>
       </div>
-    <div className="forgot-password">
-      
-      <div className='headerA'>
-      <img
-    className="logoA"
-    src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
-    alt="AICTE Logo"
-  />
-  <div className='portalA'>
-    <label className='AICTEA'><b> AICTE</b></label>
-    <br></br>
-    <label className='note'>a unified portal for all your needs</label>
-  </div>
-  </div>
-      <h3 className="fpp">Forgot Password?</h3>
-      <form onSubmit={handleSubmit}>
-        <label>
-        <div className="enteremail">
-          Enter the Email Address associated with your account:
-          </div>
-          <div className="email">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            
+
+      <div className='cont'>
+        <div className='headerA'>
+        <img
+            className="logoA"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
+            alt="AICTE Logo"
           />
+          
+          <div className='portalA'>
+            <label className='AICTEA'><b> AICTE</b></label>
+            <br></br>
+            <label className='x'>a unified portal for all your needs</label>
+        
           </div>
-        </label>
-        <button type="submit">Reset Password</button>
-      </form>
-      {message && <p className="message">{message}</p>}
-    </div>
+        </div>
+        <div className="forgot-password-container">
+          <div className="forgot-password-form">
+            <h1>Forgot Password</h1>
+            <div className="inputcontainer">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email_forgot"
+                name="email"
+                value={email}
+                onChange={handleEmailChange}
+                required
+              />
+            </div>
+            {errorMessage && (
+              <p className="error-message">{errorMessage}</p>
+            )}
+            <button className="reset-password-button" onClick={handleRequestPasswordReset}>
+              Request Password Reset
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default ForgotPassword;

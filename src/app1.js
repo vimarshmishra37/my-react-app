@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Signup from './Signup'; // Import the Signup component
+import ForgotPassword from './fp';
 
 const Appa = () => {
   const validCredentials = {
@@ -57,7 +58,7 @@ const Appa = () => {
     setShowforgot(true); // Show the Signup component
   };
   if (showforgot) {
-    return <Signup />;
+    return (<div><ForgotPassword /></div>);
   }
   // Conditional rendering based on showSignup state
   if (showSignup) {

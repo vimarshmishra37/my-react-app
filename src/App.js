@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Signup from './Signup'; // Import the Signup component
-
+import ForgotPassword from './fp';
 const App = () => {
   const validCredentials = {
     loginId: 'vimarshmishra',
@@ -17,7 +17,7 @@ const App = () => {
   // State to manage authentication status and error message
   const [authenticated, setAuthenticated] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
+  const [showforgot, setShowforgot] = useState(false);
   // State to control the rendering of the Signup component
   const [showSignup, setShowSignup] = useState(false);
 
@@ -48,7 +48,12 @@ const App = () => {
       setErrorMessage('Credentials do not match.'); // Set the error message
     }
   };
-
+  const handleforgot = () => {
+    setShowforgot(true); // Show the Signup component
+  };
+  if (showforgot) {
+    return (<div><ForgotPassword /></div>);
+  }
   // Function to handle signup button click and render Signup component
   const handleSignupClick = () => {
     setShowSignup(true); // Show the Signup component
@@ -104,7 +109,9 @@ const App = () => {
                   />
                 </div>
                 <div className="input-container">
-                  <label htmlFor="password">Password:<a href=''> Forgot password?</a> </label>
+                <label htmlFor="password">Password: <button className="forgot" onClick={handleforgot}>
+                  forgot password
+                </button></label>
                   <input
                     type="password"
                     id="password"
