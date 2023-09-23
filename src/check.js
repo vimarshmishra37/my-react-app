@@ -42,7 +42,7 @@ const Check = () => {
      
       <div>
         
-      <div className='header'>
+      <a href='https://www.aicte-india.org/' className='logo_button'><div className='header'>
       <img
     className="logo"
     src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
@@ -53,7 +53,7 @@ const Check = () => {
     <br></br>
     <label className='y'>a unified portal for all your needs</label>
   </div>
-  </div>
+  </div></a>
         <div className="background-image"> </div>
       </div>
 

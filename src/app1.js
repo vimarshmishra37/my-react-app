@@ -76,18 +76,23 @@ const Appa = () => {
       </div>
 
       <div className='cont'>
+      <a href='https://www.aicte-india.org/' className='logo_button' target='_blank'>
         <div className='headerA'>
           <img
             className="logoA"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
             alt="AICTE Logo"
           />
+          
           <div className='portalA'>
             <label className='AICTEA'><b> AICTE</b></label>
             <br></br>
             <label className='x'>a unified portal for all your needs</label>
+        
           </div>
+          
         </div>
+        </a>
         <div className="login-container">
           <div className="login-form">
             {authenticated ? (

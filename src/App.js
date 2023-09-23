@@ -77,8 +77,8 @@ const App = () => {
       </div>
 
       <div className='cont'>
-        
-      <div className='headerA'>
+        <a href='https://www.aicte-india.org/' className='logo_button' target='_blank'>
+        <div className='headerA'>
           <img
             className="logoA"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
@@ -93,6 +93,8 @@ const App = () => {
           </div>
           
         </div>
+        </a>
+     
         
         <div className="login-container">
           <div className="login-form">

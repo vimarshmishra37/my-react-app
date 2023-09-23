@@ -8,7 +8,9 @@
     height: 100vh;
     background-color: #f0f0f0;
   }
-  
+  .logo_button{
+    text-decoration: none;
+  }
   .button-box {
     display: flex;
     justify-content:center;
