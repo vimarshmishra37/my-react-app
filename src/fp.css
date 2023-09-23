@@ -12,6 +12,10 @@
    filter: blur(5px);/* Optionally add a blur effect to the background */
    z-index: -1;
 }
+#heading{
+  position: relative;
+  top: 10px;
+}
 .forgot-password-container {
   background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
   border-radius: 8px;
@@ -33,6 +37,12 @@
   margin: 10%;
   width: 80%;
 }
+#email_forgotp
+{
+  font-size: 20px;
+  position: relative;
+  right: 42%;
+}
 /* Style for the "Forgot Password" form header */
 .forgot-password-form h1 {
   font-size: 24px;
@@ -47,9 +57,9 @@
   font-size: 14px;
   margin-top: 10px;
 }
-
 /* Style for the "Reset Password" button */
 .reset-password-button {
+  height: 40px;
   background-color: #007bff; /* Button background color */
   color: #fff; /* Button text color */
   border: none;

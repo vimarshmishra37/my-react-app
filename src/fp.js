@@ -51,14 +51,15 @@ const ForgotPassword = () => {
         </div>
         <div className="forgot-password-container">
           <div className="forgot-password-form">
-            <h1>Forgot Password</h1>
+            <h1 id='heading'>Forgot Password</h1>
             <div className="inputcontainer">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email" id='email_forgotp'><b>Email:</b></label>
               <input
                 type="email"
                 id="email_forgot"
                 name="email"
                 value={email}
+                placeholder='Enter Your Registered Email'
                 onChange={handleEmailChange}
                 required
               />
@@ -68,6 +69,9 @@ const ForgotPassword = () => {
             )}
             <button className="reset-password-button" onClick={handleRequestPasswordReset}>
               Request Password Reset
+            </button>
+            <button className="go-back-button" id='go-back-button'onClick={() => window.location.href = 'index.html'}>
+              Go Back
             </button>
           </div>
         </div>

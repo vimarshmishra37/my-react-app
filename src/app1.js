@@ -104,7 +104,7 @@ const Appa = () => {
                 </div>
                 <div className="input-container">
                   <label htmlFor="password">Password: <button className="forgot" onClick={handleforgot}>
-                  forgot password
+                  forgot password?
                 </button></label>
                   <input
                     type="password"
