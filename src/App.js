@@ -70,7 +70,7 @@ const App = () => {
 
       <div className='cont'>
         
-        <div className='headerA'>
+      <div className='headerA'>
           <img
             className="logoA"
             src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"

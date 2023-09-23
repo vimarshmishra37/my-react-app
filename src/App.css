@@ -157,7 +157,7 @@ color: red;
   align-items: center;
       filter: none;
     }
-    .header{
+    .headerA{
       display: flex;
     z-index: 1;
     position: relative;

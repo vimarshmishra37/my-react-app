@@ -13,7 +13,20 @@
   align-items: center;
   height: 100vh; /* Ensure the component covers the full viewport height */
 }
+#selector{
+  height: 40px;
+  width: 25%;
+ border: 1px solid grey;
+ border-radius: 7px;
+ color: grey;
+ text-align: center;
+}
+.selector{
+  position: relative;
+  top: -13px;
+  left: 40%;
 
+}
 .signup-container {
 position: relative;
 right: 100px;
@@ -44,6 +57,7 @@ label {
 }
 .upper{
   display: flex;
+  margin-left: 4.5%;
 }
 .signup_log{
   display: flex;
@@ -52,9 +66,10 @@ bottom: 250px;
 right: 170px;
 }
 
+
 #username_signup,#password_signup,#email {
   align-items: center;
-  width: 100%;
+  width: 87%;
   padding: 10px;
   padding-right: 10%;
   padding-left: 10%;
@@ -63,14 +78,15 @@ right: 170px;
   font-size: 16px;
   
 }
+
 #pac{
   position: relative;
+
   left:25% ;
 }
 .cen{
   justify-content: center;
   display: flex;
-  
   align-items: center;
 }
 button[type='submit'] {
@@ -96,4 +112,7 @@ position: relative;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+}
+.error-message{
+  text-align: center;
 }
