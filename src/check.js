@@ -42,7 +42,7 @@ const Check = () => {
      
       <div>
         
-      <a href='https://www.aicte-india.org/' className='logo_button'><div className='header'>
+      <a href='https://www.aicte-india.org/' className='logo_button' target='_blank'><div className='header'>
       <img
     className="logo"
     src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/All_India_Council_for_Technical_Education_logo.png/220px-All_India_Council_for_Technical_Education_logo.png"
