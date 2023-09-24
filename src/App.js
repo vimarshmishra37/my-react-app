@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './App.css'; // You can create and import your own CSS for styling
+import './App.css'; 
 import Check from './check';
+import './header.css';
+import Home from './home/Home';
 
 function App() {
     const img={
@@ -17,29 +19,53 @@ function App() {
     {
        return(<div><Check/></div>) 
     }
+
+    const img1 = {
+      imageUrl: 'https://imgs.search.brave.com/PLAtKlazQcXfq8oROIysS4XfHEhlSwmBkWZTT3Xxt9E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dC5icmFuZGZldGNo/LmlvL2lkRHZrbnNV/N0MvaWR3cVY1WUhv/eC5wbmc_dXBkYXRl/ZD0xNjM1ODkxODgw/NzQ0',
+    
+    };
   return (
     <div className="App">
         <div>
             <div className='background-imageL'></div>
         </div>
+        <section className='head'>
+        <div className='container flexSB'>
+        <div style={{display:"flex",flexDirection:"row",gap:"8px"}}>
+          <img src={img1.imageUrl} alt="logo" style={{height:"70px"}}/>
+          <div className='logo'>
+            <h1>AICTE</h1>
+            {/* <span>A unified portal for all your needs</span> */}
+          </div>
+          </div>
+          <div className='social'>
+            <i className='fab fa-facebook-f icon'></i>
+            <i className='fab fa-twitter icon'></i>
+            <i className='fab fa-youtube icon'></i>
+            <i className='fab fa-instagram icon'></i>
+            
+          </div>
+        </div>
+        </section>
       <header>
-        <h1>My Website</h1>
-        <nav>
-          <ul>
+        
+        <nav >
+          <ul className='navbar'>
+            <>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><button onClick={handleforgot}>hello</button></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Analyse</a></li>
+            <li><a href="#">Collaborate</a></li>
+            </>
+            <li><button className="btn"onClick={handleforgot}>Login/SignUp</button></li>
           </ul>
         </nav>
       </header>
+      <Home/>
+      
 
-      <main>
-        <section>
-          <h2>Welcome to My Website</h2>
-          <p>This is the main content of the website.</p>
-        </section>
-      </main>
 
       <footer className='about'>
       <h2 className="start1">ABOUT US</h2>
@@ -76,7 +102,7 @@ function App() {
           <div className='right row'>
             
             <input type='email'className='inp' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane z'></i>
+            <i className='fa fa-paper-plane x'></i>
           </div>
         </div>
       </section>
