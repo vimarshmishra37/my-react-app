@@ -2,10 +2,19 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
+import Check from "../check"
 
 const Header = () => {
-  const [click, setClick] = useState(false)
-
+  const [click, setClick] = useState(false);
+  const [login, setlogin] = useState(false);
+  if(setlogin)
+  {
+    return (
+      <div>
+        <Check/>
+      </div>
+    )
+  }
   return (
     <>
       <Head />
@@ -34,7 +43,7 @@ const Header = () => {
 
           </ul>
           <div className='start'>
-            <div className='button'>LOGIN / SIGNUP</div>
+            <div className='button' onClick={()=> setlogin(true)}>LOGIN / SIGNUP</div>
           </div>
           <button className='toggle' onClick={() => setClick(!click)}>
             {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}

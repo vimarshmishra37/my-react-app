@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './check.css';
-import App from './App';
+import Appc from './App3';
 import Appa from './app1';
 import Appb from './app2';
 const Check = () => {
@@ -12,7 +12,7 @@ const Check = () => {
   if (selectedTab === 'educator' ) {
     return (
       <div>
-        <App />
+        <Appc />
         
       </div>
     );

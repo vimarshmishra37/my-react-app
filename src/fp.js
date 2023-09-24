@@ -1,6 +1,6 @@
 // fp.js
 import React, { useState } from 'react';
-import './App.css'; // Make sure to import the CSS file for styling
+import './App1.css'; // Make sure to import the CSS file for styling
 import './fp.css';
 
 const ForgotPassword = () => {

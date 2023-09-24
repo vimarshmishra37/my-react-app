@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App1.css';
 import Signup from './Signup'; // Import the Signup component
 import ForgotPassword from './fp';
-const Appb = () => {
+const Appc = () => {
   const validCredentials = {
     loginId: 'vimarshmishra',
     password: 'omar123',
@@ -17,10 +17,10 @@ const Appb = () => {
   // State to manage authentication status and error message
   const [authenticated, setAuthenticated] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
+  const [showforgot, setShowforgot] = useState(false);
   // State to control the rendering of the Signup component
   const [showSignup, setShowSignup] = useState(false);
-  const [showforgot, setShowforgot] = useState(false);
+
   // Function to handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -48,7 +48,7 @@ const Appb = () => {
       if(  formData.loginId===''||  formData.password==='')
       setErrorMessage('Enter All Required Fields');
     else
-      setErrorMessage('Credentials do not match.'); // Set the error message
+      setErrorMessage('Credentials do not match'); // Set the error message
     }
   };
   const handleforgot = () => {
@@ -68,14 +68,16 @@ const Appb = () => {
   }
 
   return (
-    <div className="app">
+    //1
+     <div className="app">
       {/* Background image */}
+   
       <div>
         <div className="background-image"> </div>
       </div>
 
       <div className='cont'>
-      <a href='https://www.aicte-india.org/' className='logo_button' target='_blank'>
+        <a href='https://www.aicte-india.org/' className='logo_button' target='_blank'>
         <div className='headerA'>
           <img
             className="logoA"
@@ -92,13 +94,15 @@ const Appb = () => {
           
         </div>
         </a>
+     
+        
         <div className="login-container">
           <div className="login-form">
             {authenticated ? (
               <p className="welcome-message">Welcome, {validCredentials.loginId}!</p>
             ) : (
               <div>
-                <h1>Administrator <br></br> Login</h1>
+                <h1>Educator <br></br> Login</h1>
                 <div className="input-container">
                   <label htmlFor="loginId">Login ID:</label>
                   <input
@@ -150,4 +154,4 @@ const Appb = () => {
   );
 };
 
-export default Appb;
+export default Appc;
