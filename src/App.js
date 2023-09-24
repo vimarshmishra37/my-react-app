@@ -102,7 +102,7 @@ function App() {
           <div className='right row'>
             
             <input type='email'className='inp' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane x'></i>
+            <i className='fa fa-paper-plane z'></i>
           </div>
         </div>
       </section>
