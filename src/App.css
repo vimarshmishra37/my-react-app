@@ -43,7 +43,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    height:100vh;
+    height:123vh;
   }
   
   .card-container {
@@ -103,35 +103,66 @@ body {
     /* position:fixed; */
     /* bottom:0; */
     width:100%;
+  
+  }
+
+  .container{
+  
+    display: flex;
+    font-size: 90%;
   }
   .notify .right,
   .notify .left {
+    
     padding-right: 50px;
   }
+  
   .notify h1 {
+    
     color: #fff;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    
   }
   .notify .right {
     display: flex;
+  
+  height: 10px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
   }
-  .notify input {
-    width: 100%;
+  .inp{
+    height: 10%;
+    width: 70%;
+    position: relative;
+  margin-top: 10%;
+    margin-left: 10%;
+  }
+   input {
+    
+    width: 90%;
     padding: 20px;
     border: none;
     outline: none;
     height: 30px;
   }
   .notify i {
+    
     padding: 10px;
     color: #100641;
     background-color: #fff;
   }
   
   .sub{
-    color:#fff;
+        color:#fff;
   }
+ .x{
+  position: relative;
+  top: 400%;
+  right: 90px;
+  border-radius: 5px;
+height: 15px;
+width: 2%;
+ }

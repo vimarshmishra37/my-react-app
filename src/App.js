@@ -74,8 +74,9 @@ function App() {
             <span className="sub">Be the first one to know if we move things around a bit.</span>
           </div>
           <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+            
+            <input type='email'className='inp' placeholder='Enter email address' />
+            <i className='fa fa-paper-plane x'></i>
           </div>
         </div>
       </section>
