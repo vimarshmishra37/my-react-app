@@ -38,3 +38,100 @@ body {
   .headerL{
     display: flex;
   }
+  .about {
+    background-color: #ff8a0e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height:100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #100641;
+    width: calc(20% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+  }
+  
+  .card:last-child {
+    margin-right: 0;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .card img{
+    height:200px;
+  }
+
+  .card:hover{
+    box-shadow: 4px 4px 4px #946205;
+  }
+
+  .start1{
+    text-decoration: underline;
+    font-size:35px;
+  }.notify {
+    background-color:#0c0433;
+    padding: 50px 0;
+    color: #fff;
+    /* position:fixed; */
+    /* bottom:0; */
+    width:100%;
+  }
+  .notify .right,
+  .notify .left {
+    padding-right: 50px;
+  }
+  .notify h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .notify .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .notify input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    height: 30px;
+  }
+  .notify i {
+    padding: 10px;
+    color: #100641;
+    background-color: #fff;
+  }
+  
+  .sub{
+    color:#fff;
+  }
