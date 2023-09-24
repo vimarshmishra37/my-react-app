@@ -50,7 +50,7 @@ function App() {
       <header>
         
         <nav >
-          <ul className='navbar'>
+          <ul className='navbarL'>
             <>
             <li><a href="#">Home</a></li>
             <li><a href="#">Design</a></li>

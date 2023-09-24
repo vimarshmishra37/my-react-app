@@ -1,9 +1,13 @@
+
+
+/* App.css */
+
+/* Styles for the entire page */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  overflow-x:hidden;
 }
 
 .app {
@@ -16,18 +20,17 @@ body {
 /* Background image */
 
 .background-imageL {
-  background-image: url("./assets/background3.jpg"); 
-  background-size: cover;
-  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100vh;
-  padding-top: 20%;
-  padding-right: 50px;
-  color: #fff;
+  height: 100%;
+  background-image: url('https://img.freepik.com/free-vector/indian-tricolor-theme-watercolor-texture-patriotic-background-vector_1055-11952.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   filter: blur(5px);/* Optionally add a blur effect to the background */
 }
 .content{
   z-index: 1;
@@ -40,20 +43,19 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-  height:100vh;
+  height:123vh;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 20px;
-  
 }
 
 .card {
   background-color: #100641;
-  width: 300px;
+  width: calc(20% - 20px);
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -61,7 +63,6 @@ body {
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   cursor:pointer;
-  
 }
 
 .card:last-child {
@@ -126,27 +127,20 @@ body {
 }
 .notify .right {
   display: flex;
+
 height: 10px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 .inp{
-  height: 10%;
+ 
   width: 70%;
   position: relative;
 margin-top: 10%;
   margin-left: 10%;
 }
- input {
-  
-  width: 90%;
-  padding: 20px;
-  border: none;
-  outline: none;
-  height: 30px;
-}
+
 .notify i {
   
   padding: 10px;
@@ -157,7 +151,7 @@ margin-top: 10%;
 .sub{
       color:#fff;
 }
-.x{
+.z{
 position: relative;
 top: 400%;
 right: 90px;
@@ -165,8 +159,15 @@ border-radius: 5px;
 height: 15px;
 width: 2%;
 }
+.navbarL{
+display:flex;
+flex-direction:row;
+justify-content: space-around;
+height:13vh;
+list-style-type: none;
+text-decoration:none;
 
-
+}
 .hero #heading h3 {
 color: #fff;
 }
@@ -188,8 +189,6 @@ padding: 0;
   width: 100%;
 }
 }
-
-
 .row{
 font-size:20px;
 color:#100641;
@@ -202,18 +201,17 @@ font-weight:750;
 font-size:15px;
 background-color:#100641;
 }
-
-
 .btn{
 background-color: #100641;
 color:white;
-/* height:50px;
-width:100px; */
+height: 65px; 
+/*-webkit-transform: skewX(21deg);*/
+transform:skew(-15deg);
+text-transform:capitalize;
 position:absolute;
 right:15px;
-top:90px;
+top:80px;
 }
-
 .navbar{
 display:flex;
 flex-direction:row;
@@ -228,20 +226,16 @@ list-style-type: none;
 ul a{
 text-decoration:none;
 }
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
 padding: 0;
-margin: 0;
+margin : 0;
 box-sizing: border-box;
 }
 body {
 font-family: "Roboto", sans-serif;
 background-color: #f8f8f8;
 }
-/*------------global-----------*/
 .container {
 max-width: 85%;
 margin: auto;
@@ -274,10 +268,10 @@ list-style-type: none;
 .row {
 width: 50%;
 }
-button {
+.btn {
 padding: 17px 30px;
-background-color: #fff;
-color: #1eb2a6;
+background-color: #100641;
+color: fff;
 font-weight: 600;
 border: none;
 margin: 30px 10px 0 0;
@@ -289,15 +283,10 @@ transition: 0.5s;
 button i {
 margin-left: 20px;
 }
-button:hover {
-box-shadow: none;
-}
 .primary-btn {
 background-color: #1eb2a6;
 color: #fff;
 }
-
-/*------------global-----------*/
 #heading {
 text-align: center;
 padding: 40px 0;
@@ -342,6 +331,7 @@ font-weight: 500;
 font-size: 17px;
 text-transform: uppercase;
 }
+
 .margin {
 margin-top: 40.3%;
 }
@@ -380,16 +370,4 @@ padding: 80px 0;
 .shadow {
 box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
 background-color: #fff;
-}
-@media screen and (max-width: 768px) {
-.grid2,
-.grid3,
-.grid {
-  grid-template-columns: repeat(2, 1fr);
-}
-.back {
-  background-position: center;
-  padding-top: 50%;
-  height: 80vh;
-}
 }

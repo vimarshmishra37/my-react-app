@@ -3,6 +3,7 @@
   color: #100641;
 }
 .logo h1 {
+  display: flex;
   font-size: 35px;
   font-weight: 900;
 }
