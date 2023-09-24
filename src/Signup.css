@@ -116,3 +116,13 @@ position: relative;
 .error-message{
   text-align: center;
 }
+.institute{
+width: 30%;
+position: relative;
+top: -10px;
+left: 35%;
+}
+#institute_signup{
+  width: 100%;
+
+}

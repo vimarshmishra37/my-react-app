@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css'; // Import your CSS file
 import Appb from './app2';
+import SignupForm from './SignupPage';
 const Signup = () => {
   // Create state variables for form fields
   const [username, setUsername] = useState('');
@@ -47,7 +48,7 @@ if(select_sign)
 {
   return(
     <div>
-      <Appb/>
+      <SignupForm/>
     </div>
   );
 }
